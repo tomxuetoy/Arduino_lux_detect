@@ -13,7 +13,7 @@ void setup(){
 
   delay(200);
   Serial.begin(9600);
-  Serial.println("Startto detect the light lux");
+  Serial.println("Start to detect the light lux");
 }
 
 void loop(){
@@ -37,7 +37,7 @@ void loop(){
 void BH1750_Init(int address){
 
   Wire.beginTransmission(address);
-  Wire.write(0x10); // 1 [lux] aufloesung
+  Wire.write(0x10); // 1 [lux] resolution
   Wire.endTransmission();
 }
 
