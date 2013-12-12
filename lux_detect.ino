@@ -1,3 +1,5 @@
+// the code is from link: 
+// http://blog.simtronyx.de/en/measurement-of-illuminance-with-a-bh1750fvi-breakout-board-gy-30-and-an-arduino-uno/
 #include <Wire.h>
 
 int BH1750_address = 0x23; // i2c Addresse
@@ -10,7 +12,7 @@ void setup(){
 
   delay(200);
   Serial.begin(9600);
-  Serial.println("Starte Beleuchtungsstaerkemessung - blog.simtronyx.de");
+  Serial.println("Startto detect the light lux");
 }
 
 void loop(){
